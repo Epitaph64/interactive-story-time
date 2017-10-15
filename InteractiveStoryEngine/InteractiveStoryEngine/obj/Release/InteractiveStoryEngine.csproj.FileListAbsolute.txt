@@ -14,3 +14,4 @@ F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveSt
 F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.csproj.GenerateResource.Cache
 F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.exe
 F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.pdb
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.csprojResolveAssemblyReference.cache

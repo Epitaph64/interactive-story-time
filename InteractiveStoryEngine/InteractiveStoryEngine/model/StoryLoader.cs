@@ -20,7 +20,7 @@ namespace InteractiveStoryEngine.model
         static public Story LoadStory(String fileName)
         {
             // load in the story program (YAML document) to input string
-            var doc = File.ReadAllText($"stories/{fileName}");
+            var doc = File.ReadAllText(fileName);
             var input = new StringReader(doc);
 
             // setup deserializer engine

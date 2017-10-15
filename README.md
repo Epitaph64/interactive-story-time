@@ -2,7 +2,7 @@
 An interactive story-telling "console" designed to make programming your own stories easy using a YAML-based parser. Uses the WPF framework to render buttons/text in a pleasing way on Windows 10.
 
 ### Example Story Script
-- Name the file story.yaml and place it in binary's stories/ path
+- Name the file story.yaml and place it in binary path
 - Copy and paste the following script to get started:
 
 ```

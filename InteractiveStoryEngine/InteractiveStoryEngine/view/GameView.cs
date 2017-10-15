@@ -49,7 +49,7 @@ namespace InteractiveStoryEngine.view
                 }
             }
 
-            Story story = LoadStory("basic.yaml");
+            Story story = LoadStory("story.yaml");
 
             // initialize page dictionary
             pageDict = new Dictionary<int, StoryPage>();
