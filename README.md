@@ -50,6 +50,7 @@ pages:
 
 ### Credits
 - YamlDotNet (Deserialize YAML format for story loading):
+  - Walter Macfarland (Epitaph64) for this project
   - https://github.com/aaubry/YamlDotNet
 
 ### Ideas for Future Improvement
