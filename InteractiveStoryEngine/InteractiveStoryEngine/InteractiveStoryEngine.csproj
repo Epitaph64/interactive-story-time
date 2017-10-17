@@ -61,6 +61,7 @@
     </ApplicationDefinition>
     <Compile Include="model\StoryObjects.cs" />
     <Compile Include="model\StoryLoader.cs" />
+    <Compile Include="model\StoryState.cs" />
     <Compile Include="view\GameView.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

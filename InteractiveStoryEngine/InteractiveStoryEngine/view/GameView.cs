@@ -9,15 +9,14 @@ namespace InteractiveStoryEngine.view
 {
     internal class GameView
     {
+        // view-model objects/references
         public GameConsole gc;
         private Button[] buttons;
         private Grid buttonGrid;
 
-        private Dictionary<int, StoryPage> pageDict;
-        private Dictionary<int, bool> pageVisitation;
-        private int currentPage;
-
-        private Dictionary<int, StoryButton> storyButtonDict;
+        // story state
+        private StoryState state;
+        
         // to avoid magic number usage, but cannot be changed
         private const int buttonCount = 8;
 
@@ -49,73 +48,62 @@ namespace InteractiveStoryEngine.view
                 }
             }
 
-            Story story = LoadStory("story.yaml");
-
-            // initialize page dictionary
-            pageDict = new Dictionary<int, StoryPage>();
-            pageVisitation = new Dictionary<int, bool>();
-            foreach (var page in story.pages)
-            {
-                pageDict.Add(page.pageNo, page);
-                pageVisitation.Add(page.pageNo, false);
-            }
-
-            loadButtons(1);
+            loadStory();
         }
 
-        // load buttons from page
-        private void loadButtons(int loadPageNum)
+        private void loadStory()
         {
-            currentPage = loadPageNum;
-            storyButtonDict = new Dictionary<int, StoryButton>();
-            for (int i = 0; i < buttonCount; i++)
-            {
-                buttons[i].Content = "";
-                buttons[i].Visibility = Visibility.Hidden;
-            }
+            // create story initial state
+            state = new StoryState();
 
-            // if currentPage exists and has storyButtons
-            if (pageDict.ContainsKey(currentPage) && pageDict[currentPage].storyButtons != null)
+            // for now, write the opening text of first page after loading story
+            // TODO: title page format perhaps or special field in metadata object
+            var openingText = state.GetOpeningText();
+            if (openingText != null)
             {
-                // if the page was already visisted and has returningText specified
-                if (pageVisitation[currentPage] && pageDict[currentPage].returningText != null)
-                {
-                    gc.Write(pageDict[currentPage].returningText);
-                } else
-                {
-                    gc.Write(pageDict[currentPage].openingText);
-                }
-                pageVisitation[currentPage] = true;
-                
-                foreach (var btn in pageDict[currentPage].storyButtons)
-                {
-                    buttons[btn.num].Content = btn.display;
-                    storyButtonDict.Add(btn.num, btn);
-                    buttons[btn.num].Visibility = Visibility.Visible;
-                }
+                gc.Write(openingText);
             }
+            updateButtonDisplays(state.GetButtonDisplays());
         }
 
-        // navigate to different page in story
-        private void goToPage(int go)
+        private void updateView()
         {
-            gc.Write(pageDict[currentPage].closingText);
-            loadButtons(go);
+            updateButtonDisplays(state.GetButtonDisplays());
         }
 
         // if a left-panel button is clicked, handle the event
         private void buttonClick(object sender, RoutedEventArgs e)
         {
+            // determine Button which triggered the event
             Button button = (Button)sender;
-            // determine button number from string "bX" where X is the number of the button
-            Int32 buttonNumber = Int32.Parse("" + button.Name.ToCharArray()[1]);
-            if (storyButtonDict.ContainsKey(buttonNumber))
+            int buttonNumber = int.Parse("" + button.Name.ToCharArray()[1]);
+
+            // pass the number of the button to the state
+            // if the button has any associated text it will be returned
+            string clickedText = state.buttonClicked(buttonNumber);
+
+            // write button click text
+            if (clickedText != null)
             {
-                if (storyButtonDict[buttonNumber].clickText != null)
+                gc.Write(clickedText);
+            }
+
+            updateView();
+        }
+
+        private void updateButtonDisplays(string[] displayTexts)
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                var text = displayTexts[i];
+                if (text == null)
                 {
-                    gc.Write(storyButtonDict[buttonNumber].clickText);
+                    buttons[i].Visibility = Visibility.Hidden;
+                } else
+                {
+                    buttons[i].Content = text;
+                    buttons[i].Visibility = Visibility.Visible;
                 }
-                goToPage(storyButtonDict[buttonNumber].go);
             }
         }
     }
