@@ -12,7 +12,6 @@ namespace InteractiveStoryEngine.model
         private Story story;
 
         private Dictionary<int, StoryPage> pages;
-        private Dictionary<int, bool> visited;
 
         private int currentPage;
 

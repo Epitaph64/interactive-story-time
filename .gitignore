@@ -1,5 +1,11 @@
 InteractiveStoryEngine/InteractiveStoryEngine/bin/Debug/
 InteractiveStoryEngine/InteractiveStoryEngine/bin/Release/
+InteractiveStoryEngine/InteractiveStoryEngine/obj/
 *.cache
 *.exe
 *.pdb
+# VS User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
