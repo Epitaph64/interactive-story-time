@@ -22,6 +22,7 @@ namespace InteractiveStoryEngine.model
         public string openingText { get; set; }
         public string closingText { get; set; }
         public string returningText { get; set; }
+        public bool visited { get; set; }
         public List<StoryButton> storyButtons { get; set; }
     }
 

@@ -21,12 +21,10 @@ namespace InteractiveStoryEngine.model
             story = StoryLoader.LoadStory("story.yaml");
 
             pages = new Dictionary<int, StoryPage>();
-            visited = new Dictionary<int, bool>();
-
             foreach (var page in story.pages)
             {
                 pages.Add(page.pageNo, page);
-                visited.Add(page.pageNo, false);
+                pages[page.pageNo].visited = false;
             }
 
             // set currentPage to smallest pageNo in story
@@ -36,13 +34,13 @@ namespace InteractiveStoryEngine.model
         // page accessor methods
         internal string GetOpeningText()
         {
-            if (visited[currentPage])
+            if (pages[currentPage].visited)
             {
                 return pages[currentPage].returningText;
             }
             else
             {
-                visited[currentPage] = true;
+                pages[currentPage].visited = true;
                 return pages[currentPage].openingText;
             }
         }
