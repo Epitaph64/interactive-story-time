@@ -56,6 +56,7 @@ pages:
 ### Ideas for Future Improvement
 - Proper error handling, particularly passing YAML parser errors to game console instead of crashing.
 - Story load function / story browser
+- Ability to restart a story (perhaps via hotkey which prompts user)
 - Story format (using YAMLDotNet to provide YAML deserialization):
   - Add metadata (author name, story title, etc.)
   - Change font family, button colors, "console" printout background/foreground colors.
