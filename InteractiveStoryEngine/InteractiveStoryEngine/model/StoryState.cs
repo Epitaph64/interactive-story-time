@@ -40,7 +40,8 @@ namespace InteractiveStoryEngine.model
             if (visited[currentPage])
             {
                 return pages[currentPage].returningText;
-            } else
+            }
+            else
             {
                 visited[currentPage] = true;
                 return pages[currentPage].openingText;
@@ -57,7 +58,8 @@ namespace InteractiveStoryEngine.model
                 // return the closingText of last page concatenated
                 // with the opening text of the new page
                 return closingText + GetOpeningText();
-            } else
+            }
+            else
             {
                 return $"Error: page does not exist in story: {pageNo}";
             }
