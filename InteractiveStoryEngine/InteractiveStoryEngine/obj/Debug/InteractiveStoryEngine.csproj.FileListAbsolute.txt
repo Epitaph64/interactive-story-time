@@ -15,3 +15,20 @@ F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveSt
 F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.csproj.GenerateResource.Cache
 F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.exe
 F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.pdb
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Debug\InteractiveStoryEngine.exe.config
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Debug\InteractiveStoryEngine.exe
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Debug\InteractiveStoryEngine.pdb
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Debug\YamlDotNet.dll
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Debug\YamlDotNet.xml
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.csprojResolveAssemblyReference.cache
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\MainWindow.g.cs
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\App.g.cs
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine_MarkupCompile.cache
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine_MarkupCompile.lref
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\App.baml
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\MainWindow.baml
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.g.resources
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.Properties.Resources.resources
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.csproj.GenerateResource.Cache
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.exe
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Debug\InteractiveStoryEngine.pdb

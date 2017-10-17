@@ -1,0 +1,34 @@
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\InteractiveStoryEngine.exe.config
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\InteractiveStoryEngine.exe
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\InteractiveStoryEngine.pdb
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\YamlDotNet.dll
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\YamlDotNet.xml
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\MainWindow.g.cs
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\App.g.cs
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine_MarkupCompile.cache
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine_MarkupCompile.lref
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\App.baml
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\MainWindow.baml
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.g.resources
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.Properties.Resources.resources
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.csproj.GenerateResource.Cache
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.exe
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.pdb
+F:\My Documents\visual studio 2017\Projects\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.csprojResolveAssemblyReference.cache
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\InteractiveStoryEngine.exe.config
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\InteractiveStoryEngine.exe
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\InteractiveStoryEngine.pdb
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\YamlDotNet.dll
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\bin\Release\YamlDotNet.xml
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.csprojResolveAssemblyReference.cache
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\MainWindow.g.cs
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\App.g.cs
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine_MarkupCompile.cache
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine_MarkupCompile.lref
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\App.baml
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\MainWindow.baml
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.g.resources
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.Properties.Resources.resources
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.csproj.GenerateResource.Cache
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.exe
+C:\Users\Epitaph64\Desktop\interactive-story-source\interactive-story-time\InteractiveStoryEngine\InteractiveStoryEngine\obj\Release\InteractiveStoryEngine.pdb

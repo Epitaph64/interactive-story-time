@@ -48,20 +48,6 @@ namespace InteractiveStoryEngine.model
         }
 
         // currentPage accessor methods
-        internal string SetCurrentPage(int pageNo)
-        {
-            if (pages.ContainsKey(pageNo))
-            {
-                string closingText = pages[currentPage].closingText;
-                currentPage = pageNo;
-                // return the closingText of last page concatenated
-                // with the opening text of the new page
-                return closingText + GetOpeningText();
-            } else
-            {
-                return $"Error: page does not exist in story: {pageNo}";
-            }
-        }
         internal int GetCurrentPage()
         {
             return currentPage;
@@ -88,7 +74,14 @@ namespace InteractiveStoryEngine.model
         internal string buttonClicked(int buttonNumber)
         {
             var button = pages[currentPage].storyButtons[buttonNumber];
-            return SetCurrentPage(button.go);
+            if (pages.ContainsKey(button.go))
+            {
+                currentPage = button.go;
+                return button.clickText;
+            } else
+            {
+                return $"Error: page does not exist in story: {button.go}";
+            }
         }
     }
 }
