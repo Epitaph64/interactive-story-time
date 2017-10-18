@@ -45,16 +45,19 @@ namespace InteractiveStoryEngine.model
             }
         }
 
+        internal string GetClosingText()
+        {
+            return (pages[currentPage].textClose == null) ?
+                "" : pages[currentPage].textClose;
+        }
+
         // currentPage accessor methods
         internal string SetCurrentPage(int pageNo)
         {
             if (pages.ContainsKey(pageNo))
             {
-                string closingText = pages[currentPage].textClose;
                 currentPage = pageNo;
-                // return the closingText of last page concatenated
-                // with the opening text of the new page
-                return closingText + GetOpeningText();
+                return GetClosingText() + GetOpeningText();
             }
             else
             {
@@ -64,12 +67,6 @@ namespace InteractiveStoryEngine.model
         internal int GetCurrentPage()
         {
             return currentPage;
-        }
-
-        internal string GetClosingText()
-        {
-            return (pages[currentPage].textClose == null) ?
-                "" : pages[currentPage].textClose;
         }
 
         internal string[] GetButtonDisplays()
