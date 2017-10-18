@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using InteractiveStoryEngine.model;
-using static InteractiveStoryEngine.model.StoryLoader;
 
 namespace InteractiveStoryEngine.view
 {
@@ -32,7 +29,7 @@ namespace InteractiveStoryEngine.view
             {
                 buttons[i] = new Button();
                 buttons[i].Name = $"b{i}";
-                buttons[i].Click += buttonClick;
+                buttons[i].Click += ButtonClicked;
 
                 // add button to buttonGrid
                 this.buttonGrid.Children.Add(buttons[i]);
@@ -63,16 +60,11 @@ namespace InteractiveStoryEngine.view
             {
                 gc.Write(openingText);
             }
-            updateButtonDisplays();
-        }
-
-        private void updateView()
-        {
-            updateButtonDisplays();
+            UpdateButtons();
         }
 
         // if a left-panel button is clicked, handle the event
-        private void buttonClick(object sender, RoutedEventArgs e)
+        private void ButtonClicked(object sender, RoutedEventArgs e)
         {
             // determine Button which triggered the event
             Button button = (Button)sender;
@@ -88,10 +80,10 @@ namespace InteractiveStoryEngine.view
                 gc.Write(clickedText);
             }
 
-            updateView();
+            UpdateButtons();
         }
 
-        private void updateButtonDisplays()
+        private void UpdateButtons()
         {
             var displays = state.GetButtonDisplays();
             for (int i = 0; i < 8; i++)
