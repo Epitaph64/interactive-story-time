@@ -36,27 +36,5 @@ namespace InteractiveStoryEngine.model
     {
         public int artNo { get; set; }
         public string text { get; set; }
-
-        public string GetDisplay(string layout, string content = "")
-        {
-            string[] tokens = layout.Split('-');
-            string output = "";
-            foreach (string t in tokens)
-            {
-                switch (t)
-                {
-                    // add associated art
-                    case "a":
-                        output += text;
-                        break;
-                    // add passed content
-                    case "c":
-                        output += content;
-                        break;
-                }
-                output += Environment.NewLine;
-            }
-            return output;
-        }
     }
 }

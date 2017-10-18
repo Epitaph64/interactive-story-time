@@ -34,7 +34,7 @@ namespace InteractiveStoryEngine.model
         // page accessor methods
         internal string GetOpeningText()
         {
-            if (pages[currentPage].visited)
+            if (pages[currentPage].visited && pages[currentPage].textReturn != null)
             {
                 return pages[currentPage].textReturn;
             }
@@ -86,8 +86,15 @@ namespace InteractiveStoryEngine.model
 
         internal string buttonClicked(int buttonNumber)
         {
-            var button = pages[currentPage].storyButtons[buttonNumber];
-            return SetCurrentPage(button.go);
+            var button = pages[currentPage].storyButtons.Find(i => i.num == buttonNumber);
+            if (button != null)
+            {
+                return SetCurrentPage(button.go);
+            }
+            else
+            {
+                return $"Error: Button does not exist with num: {buttonNumber}";
+            }
         }
     }
 }
