@@ -9,42 +9,42 @@ An interactive story-telling "console" designed to make programming your own sto
 ---
 pages:
   - pageNo: 1
-    openingText: "You read page 1's opening text."
+    textOpen: "You read page 1's opening text."
     storyButtons:
       - num: 0
         go: 2
-        display: "Turn to page 2"
+        text: "Turn to page 2"
       - num: 1
         go: 3
-        display: "Skip to page 3"
+        text: "Skip to page 3"
   - pageNo: 2
-    openingText: >-
+    textOpen: >-
       You reach page 2.
       Once you've fully read it, you must decide what to do next.
-    closingText: "You close page 2."
+    textClose: "You close page 2."
     storyButtons:
       - num: 0
         go: 1
-        display: |-
+        text: |-
           Go to
           Page 1
       - num: 3
         go: 3
-        display: |-
+        text: |-
           Go to
           Page 3
   - pageNo: 3
-    openingText: "This is the first time you've read page 3!"
-    returningText: "You've read page 3 before..."
+    textOpen: "This is the first time you've read page 3!"
+    textReturn: "You've read page 3 before..."
     storyButtons:
       - num: 0
         go: 1
-        display: "Restart Story"
+        text: "Restart Story"
       - num: 1
         go: 4
-        display: "End Story"
+        text: "End Story"
   - pageNo: 4
-    openingText: "The story is over!"
+    textOpen: "The story is over!"
     storyButtons: []
 ```
 
