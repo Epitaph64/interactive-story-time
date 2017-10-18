@@ -56,8 +56,9 @@ namespace InteractiveStoryEngine.model
         {
             if (pages.ContainsKey(pageNo))
             {
+                string closingText = GetClosingText();
                 currentPage = pageNo;
-                return GetClosingText() + GetOpeningText();
+                return closingText + GetOpeningText();
             }
             else
             {

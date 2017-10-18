@@ -63,12 +63,12 @@ namespace InteractiveStoryEngine.view
             {
                 gc.Write(openingText);
             }
-            updateButtonDisplays(state.GetButtonDisplays());
+            updateButtonDisplays();
         }
 
         private void updateView()
         {
-            updateButtonDisplays(state.GetButtonDisplays());
+            updateButtonDisplays();
         }
 
         // if a left-panel button is clicked, handle the event
@@ -76,7 +76,7 @@ namespace InteractiveStoryEngine.view
         {
             // determine Button which triggered the event
             Button button = (Button)sender;
-            int buttonNumber = int.Parse("" + button.Name.ToCharArray()[1]);
+            int buttonNumber = int.Parse(button.Name.Substring(1));
 
             // pass the number of the button to the state
             // if the button has any associated text it will be returned
@@ -91,11 +91,12 @@ namespace InteractiveStoryEngine.view
             updateView();
         }
 
-        private void updateButtonDisplays(string[] displayTexts)
+        private void updateButtonDisplays()
         {
+            var displays = state.GetButtonDisplays();
             for (int i = 0; i < 8; i++)
             {
-                var text = displayTexts[i];
+                var text = displays[i];
                 if (text == null)
                 {
                     buttons[i].Visibility = Visibility.Hidden;
