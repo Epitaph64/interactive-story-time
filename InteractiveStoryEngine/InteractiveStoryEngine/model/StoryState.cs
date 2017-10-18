@@ -54,6 +54,7 @@ namespace InteractiveStoryEngine.model
         // currentPage accessor methods
         internal string SetCurrentPage(int pageNo)
         {
+            if (pageNo == 0) return null;
             if (pages.ContainsKey(pageNo))
             {
                 string closingText = GetClosingText();
@@ -83,7 +84,12 @@ namespace InteractiveStoryEngine.model
             var button = pages[currentPage].storyButtons.Find(i => i.num == buttonNumber);
             if (button != null)
             {
-                return view.GameConsole.FormatString(button.textClick) + SetCurrentPage(button.go);
+                // set initial content to button click text if available
+                string content = button.textClick == null ?
+                    "" :
+                    button.textClick;
+
+                return content + SetCurrentPage(button.go);
             }
             else
             {
