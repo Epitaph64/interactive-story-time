@@ -65,10 +65,6 @@ namespace InteractiveStoryEngine.model
                 return $"Error: page does not exist in story: {pageNo}";
             }
         }
-        internal int GetCurrentPage()
-        {
-            return currentPage;
-        }
 
         internal string[] GetButtonDisplays()
         {
@@ -87,7 +83,7 @@ namespace InteractiveStoryEngine.model
             var button = pages[currentPage].storyButtons.Find(i => i.num == buttonNumber);
             if (button != null)
             {
-                return SetCurrentPage(button.go);
+                return view.GameConsole.FormatString(button.textClick) + SetCurrentPage(button.go);
             }
             else
             {

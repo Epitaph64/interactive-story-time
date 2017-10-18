@@ -19,9 +19,15 @@ namespace InteractiveStoryEngine.view
         public void Write(string storyString)
         {
             if (storyString == null) return;
-            storyString = storyString.TrimEnd(Environment.NewLine.ToCharArray());
-            this.textBox.AppendText(storyString + Environment.NewLine + Environment.NewLine);
+            this.textBox.AppendText(FormatString(storyString));
             this.textBox.ScrollToEnd();
+        }
+
+        public static string FormatString(string s)
+        {
+            if (s == null) return null;
+            s.TrimEnd(new char[] { '\r', '\n' });
+            return s + Environment.NewLine + Environment.NewLine;
         }
     }
 }
