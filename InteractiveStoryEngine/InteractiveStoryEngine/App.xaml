@@ -20,7 +20,7 @@
             <Setter Property="Background" Value="#A6B5CB"/>
             <Setter Property="Margin" Value="2"/>
             <Setter Property="TextBlock.TextAlignment" Value="Center"/>
-            <Setter Property="Margin" Value="16"/>
+            <Setter Property="Margin" Value="4"/>
         </Style>
     </Application.Resources>
 </Application>

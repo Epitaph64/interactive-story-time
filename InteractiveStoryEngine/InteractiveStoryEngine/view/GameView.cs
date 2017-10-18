@@ -72,7 +72,7 @@ namespace InteractiveStoryEngine.view
 
             // pass the number of the button to the state
             // if the button has any associated text it will be returned
-            string clickedText = state.buttonClicked(buttonNumber);
+            string clickedText = state.ButtonClicked(buttonNumber);
 
             // write button click text
             if (clickedText != null)

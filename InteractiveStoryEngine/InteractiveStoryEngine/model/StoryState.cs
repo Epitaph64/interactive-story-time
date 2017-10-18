@@ -78,7 +78,7 @@ namespace InteractiveStoryEngine.model
             return buttonDisplays;
         }
 
-        internal string buttonClicked(int buttonNumber)
+        internal string ButtonClicked(int buttonNumber)
         {
             var button = pages[currentPage].storyButtons.Find(i => i.num == buttonNumber);
             if (button != null)
