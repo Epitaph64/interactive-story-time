@@ -36,12 +36,12 @@ namespace InteractiveStoryEngine.model
         {
             if (pages[currentPage].visited)
             {
-                return pages[currentPage].returningText;
+                return pages[currentPage].textReturn;
             }
             else
             {
                 pages[currentPage].visited = true;
-                return pages[currentPage].openingText;
+                return pages[currentPage].textOpen;
             }
         }
 
@@ -50,7 +50,7 @@ namespace InteractiveStoryEngine.model
         {
             if (pages.ContainsKey(pageNo))
             {
-                string closingText = pages[currentPage].closingText;
+                string closingText = pages[currentPage].textClose;
                 currentPage = pageNo;
                 // return the closingText of last page concatenated
                 // with the opening text of the new page
@@ -68,8 +68,8 @@ namespace InteractiveStoryEngine.model
 
         internal string GetClosingText()
         {
-            return (pages[currentPage].closingText == null) ?
-                "" : pages[currentPage].closingText;
+            return (pages[currentPage].textClose == null) ?
+                "" : pages[currentPage].textClose;
         }
 
         internal string[] GetButtonDisplays()
@@ -78,7 +78,7 @@ namespace InteractiveStoryEngine.model
 
             foreach (StoryButton sb in pages[currentPage].storyButtons)
             {
-                buttonDisplays[sb.num] = sb.display;
+                buttonDisplays[sb.num] = sb.text;
             }
 
             return buttonDisplays;

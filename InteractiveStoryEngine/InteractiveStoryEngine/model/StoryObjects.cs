@@ -17,11 +17,9 @@ namespace InteractiveStoryEngine.model
     public class StoryPage
     {
         public int pageNo { get; set; }
-        public int artNo { get; set; }
-        public string artLayout { get; set; }
-        public string openingText { get; set; }
-        public string closingText { get; set; }
-        public string returningText { get; set; }
+        public string textOpen { get; set; }
+        public string textClose { get; set; }
+        public string textReturn { get; set; }
         public bool visited { get; set; }
         public List<StoryButton> storyButtons { get; set; }
     }
@@ -30,13 +28,35 @@ namespace InteractiveStoryEngine.model
     {
         public int num { get; set; }
         public int go { get; set; }
-        public string display { get; set; }
-        public string clickText { get; set; }
+        public string text { get; set; }
+        public string textClick { get; set; }
     }
 
     public class StoryArt
     {
         public int artNo { get; set; }
-        public string display { get; set; }
+        public string text { get; set; }
+
+        public string GetDisplay(string layout, string content = "")
+        {
+            string[] tokens = layout.Split('-');
+            string output = "";
+            foreach (string t in tokens)
+            {
+                switch (t)
+                {
+                    // add associated art
+                    case "a":
+                        output += text;
+                        break;
+                    // add passed content
+                    case "c":
+                        output += content;
+                        break;
+                }
+                output += Environment.NewLine;
+            }
+            return output;
+        }
     }
 }
