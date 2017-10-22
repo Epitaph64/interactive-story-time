@@ -86,7 +86,7 @@ namespace InteractiveStoryEngine.view
         private void UpdateButtons()
         {
             var displays = state.GetButtonDisplays();
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < buttonCount; i++)
             {
                 var text = displays[i];
                 if (text == null)
