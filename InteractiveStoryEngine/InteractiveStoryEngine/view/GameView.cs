@@ -14,7 +14,8 @@ namespace InteractiveStoryEngine.view
         // story state
         private StoryState state;
         
-        // to avoid magic number usage, but cannot be changed
+        /* to avoid magic number usage, but cannot be changed
+         * without making modification to MainWindow.xaml */
         private const int buttonCount = 8;
 
         public GameView(GameConsole gc, Grid buttonGrid)
@@ -83,6 +84,8 @@ namespace InteractiveStoryEngine.view
             UpdateButtons();
         }
 
+        /* called when a story is first loaded, and whenever a button
+        * is clicked while the StoryState is on a given page */
         private void UpdateButtons()
         {
             var displays = state.GetButtonDisplays();
